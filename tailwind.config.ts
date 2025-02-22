@@ -13,7 +13,7 @@ export default {
         'pixelify': ['"Pixelify Sans"', 'sans-serif'],
       },
       letterSpacing: {
-        'title': '0.3em',
+        'title': '0.25em',
       }
     },
   },
