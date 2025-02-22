@@ -1,6 +1,25 @@
+/*
+
+1. Create main menu component with buttons for session, study, break, start, and setting.
+2. Create button component for sessions, study, and break
+    - Create object binding two triangle buttons beside the rectangular button
+    - Create text component centered within rectangular button
+    - Define props: array of strings for each button, and an option for "minutes" 
+3. Create button for start component 
+    - Create rectangular button with text "start"
+    - No props
+    - Button functionality: Performs calculations and navigates you to timer
+4. Create button for settings component 
+    -
+
+*/
+
 import Image from 'next/image';
 import React from 'react';
-import { FiSettings } from 'react-icons/fi';
+import MenuButton from './MainMenuButton';
+import { SESSION_BUTTON, STUDY_BUTTON, BREAK_BUTTON, START_BUTTON } from '@/utils/constants';
+
+const SETTINGS_ICON_SIZE = 32;
 
 export default function MainMenu() {
   return (
@@ -20,21 +39,27 @@ export default function MainMenu() {
                 <Image
                     src="/images/settings_icon.png"
                     alt="Settings Icon"
-                    width={32}
-                    height={32}
+                    width={SETTINGS_ICON_SIZE}
+                    height={SETTINGS_ICON_SIZE}
                 />
             </button>
-            <div className="p-4">
-                <div className="mt-4 flex flex-col gap-4 w-full items-center">
-                    <button className="bg-[var(--color3)] hover:bg-[var(--color3)] text-white font-pixelify px-4 py-2 rounded w-3/4">
-                    placeholder
-                    </button>
-                    <button className="bg-[var(--color3)] hover:bg-[var(--color3)] text-white font-pixelify px-4 py-2 rounded w-3/4">
-                    placeholder
-                    </button>
-                    <button className="bg-[var(--color3)] hover:bg-[var(--color3)] text-white font-pixelify px-4 py-2 rounded w-3/4">
-                    placeholder
-                    </button>
+            <div className="p-2">
+                <div className="mt-4 flex flex-col gap-1 w-full items-center">
+                    <MenuButton
+                        label={SESSION_BUTTON.LABEL}
+                        options={SESSION_BUTTON.OPTION_ARRAY}
+                        minutes={false}
+                    />
+                    <MenuButton
+                        label={STUDY_BUTTON.LABEL}
+                        options={STUDY_BUTTON.OPTION_ARRAY}
+                        minutes={true}
+                    />
+                     <MenuButton
+                        label={BREAK_BUTTON.LABEL}
+                        options={BREAK_BUTTON.OPTION_ARRAY}
+                        minutes={true}
+                    />
                 </div>
             </div>
         </div>
