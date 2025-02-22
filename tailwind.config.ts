@@ -8,10 +8,13 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        'press-start': ['"Press Start 2P"', 'cursive'],
+        'pixelify': ['"Pixelify Sans"', 'sans-serif'],
       },
+      letterSpacing: {
+        'title': '0.3em',
+      }
     },
   },
   plugins: [],

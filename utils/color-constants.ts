@@ -8,3 +8,6 @@ export const THEME_STANDARD = {
     LABEL_COLOR2: "#47573E"
 };
 
+export const themes = {
+    standard: THEME_STANDARD,
+}
