@@ -61,7 +61,7 @@ const MenuButton: React.FC<MenuButtonProps> = ({
         {/* button */}
         <div className="flex items-center mt-0">
             {/* left arrow */}
-            <button onClick={handlePrev} className="focus:outline-none">
+            <button onClick={handlePrev} className="focus:outline-none hover:opacity-65 transition-opacity duration-200">
                 <LeftTriangle color={arrowColor} />
             </button>
             {/* text in button */}
@@ -72,7 +72,7 @@ const MenuButton: React.FC<MenuButtonProps> = ({
                 {minutes && <div className="text-lg font-pixelify leading-none">{TIME_UNIT}</div>}
             </div>
             {/* right arrow */}
-            <button onClick={handleNext} className="focus:outline-none">
+            <button onClick={handleNext} className="focus:outline-none hover:opacity-65 transition-opacity duration-200">
                 <RightTriangle color={arrowColor} />
             </button>
         </div>

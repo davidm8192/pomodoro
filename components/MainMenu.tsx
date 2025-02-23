@@ -41,7 +41,7 @@ function MainMenu() {
                 />
             </div>
             <div className="relative rounded-xl overflow-hidden shadow-lg bg-[var(--color2)] z-10">
-                <button className="absolute top-2 right-2 p-2">
+                <button className="absolute top-2 right-2 p-2 hover:opacity-65 transition-opacity duration-200">
                     <Image
                         src="/images/settings_icon.png"
                         alt="Settings Icon"
