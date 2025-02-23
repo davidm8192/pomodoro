@@ -17,14 +17,13 @@
 import Image from 'next/image';
 import React from 'react';
 import MenuButton from './MainMenuButton';
-import { SESSION_BUTTON, STUDY_BUTTON, BREAK_BUTTON, START_BUTTON } from '@/utils/constants';
-
-const SETTINGS_ICON_SIZE = 32;
+import { SESSION_BUTTON, STUDY_BUTTON, BREAK_BUTTON, START_BUTTON } from '@/utils/label-constants';
+import { SETTINGS_ICON_SIZE } from '@/utils/size-constants';
 
 export default function MainMenu() {
   return (
     <div className="max-w-md mx-auto my-0 relative">
-        <div className="relative h-48 w-full mb-[-20px] transform -rotate-[8deg] z-0">
+        <div className="relative h-36 w-full mb-[-20px] transform -rotate-[8deg] z-0">
             <Image
                 src="/images/main_menu_img.png"
                 alt="Porcupine Mascot"

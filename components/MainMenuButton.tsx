@@ -1,9 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { TIME_UNIT } from "@/utils/constants";
-
-const TRIANGLE_SIZE = 64;
+import { TIME_UNIT } from "@/utils/label-constants";
+import { TRIANGLE_ARROW_SIZE } from "@/utils/size-constants";
 
 interface MenuButtonProps {
   options: string[];
@@ -16,13 +15,13 @@ interface MenuButtonProps {
 // TODO: add on-hover on-click effect to arrows
 
 const LeftTriangle: React.FC<{ color: string }> = ({ color }) => (
-    <svg viewBox="0 0 24 24" width={TRIANGLE_SIZE} height={TRIANGLE_SIZE} fill={color}>
+    <svg viewBox="0 0 24 24" width={TRIANGLE_ARROW_SIZE} height={TRIANGLE_ARROW_SIZE} fill={color}>
         <polygon points="18,20 6,12 18,4" />
     </svg>
 );
 
 const RightTriangle: React.FC<{ color: string }> = ({ color }) => (
-    <svg viewBox="0 0 24 24" width={TRIANGLE_SIZE} height={TRIANGLE_SIZE} fill={color}>
+    <svg viewBox="0 0 24 24" width={TRIANGLE_ARROW_SIZE} height={TRIANGLE_ARROW_SIZE} fill={color}>
         <polygon points="6,20 18,12 6,4" />
     </svg>
 );
@@ -57,7 +56,7 @@ const MenuButton: React.FC<MenuButtonProps> = ({
     <div className="flex flex-col items-center">
         
         {/* button label on top */}
-        <span className="font-pixelify font-bold text-2xl tracking-widest mb-[-5px] text-[var(--label-color1)]">{label}</span>
+        <span className="font-pixelify text-2xl tracking-widest mb-[-5px] text-[var(--label-color1)]">{label}</span>
         
         {/* button */}
         <div className="flex items-center mt-0">
