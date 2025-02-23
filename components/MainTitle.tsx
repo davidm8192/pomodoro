@@ -2,7 +2,7 @@ import React from 'react';
 import { HOME_TITLE, HOME_SUBTITLE } from '@/utils/label-constants';
 import CurvedTitle from '@/components/CurvedTitle';
 
-export default function MainTitle() {
+function MainTitle() {
     return (
       <div className="text-center mt-2">
         <h1 className="text-8xl text-[var(--title-color)] font-pixelify font-bold tracking-title mb-[-20px]">
@@ -13,3 +13,4 @@ export default function MainTitle() {
     );
   }
   
+  export default MainTitle;

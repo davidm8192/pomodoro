@@ -6,7 +6,7 @@ type CurvedTextProps = {
     text: string;
 };
 
-export default function CurvedTitle({ text }: CurvedTextProps) {
+function CurvedTitle({ text }: CurvedTextProps) {
   return (
     <div className="flex justify-center mt-2">
       <ReactCurvedText
@@ -27,3 +27,5 @@ export default function CurvedTitle({ text }: CurvedTextProps) {
     </div>
   );
 }
+
+export default CurvedTitle;

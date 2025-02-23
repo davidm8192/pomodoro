@@ -5,7 +5,7 @@ export const HOME_SUBTITLE = "TIME!";
 // home page buttons
 export const SESSION_BUTTON = {
     LABEL: "sessions",
-    OPTION_ARRAY: ["1", "2", "3", "4", "5"],
+    OPTION_ARRAY: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
 };
 
 export const STUDY_BUTTON = {
@@ -15,7 +15,7 @@ export const STUDY_BUTTON = {
 
 export const BREAK_BUTTON = {
     LABEL: "break",
-    OPTION_ARRAY: ["5", "10", "15", "20", "25"],
+    OPTION_ARRAY: ["5", "10", "15", "20", "25", "30"],
 };
 
 export const TIME_UNIT = "minutes";
