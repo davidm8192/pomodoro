@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is an ongoing collaborative productivity app that simulates the Pomodoro method with customizable timer settings (session counts and study/break intervals), theme packs, and audios. We're designing a game-like and interactive timer with an original animated character whose state reflects the timer’s progress and editable taskbar. 
 
 ## Getting Started
 
