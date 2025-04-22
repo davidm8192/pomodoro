@@ -25,3 +25,17 @@ export const START_BUTTON = "start";
 export const CANCEL_BUTTON = "cancel";
 
 export const SETTINGS_COMMENT = "customize time, sounds, and theme!";
+
+// timer labels
+export const TIMER_LABELS = {
+    PAUSE: 'Pause',
+    RESUME: 'Resume',
+    SKIP_TO_BREAK: 'Skip to Break',
+    SKIP_TO_STUDY: 'Skip to Study',
+    STUDY_TIME: 'Study Time',
+    BREAK_TIME: 'Break Time',
+    SESSION: 'Session',
+    OF: 'of',
+    ALL_SESSIONS_COMPLETE: 'All Sessions Complete!',
+    RETURN_HOME: 'Return Home',
+} as const; 
