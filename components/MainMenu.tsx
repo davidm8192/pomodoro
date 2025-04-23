@@ -1,19 +1,3 @@
-/*
-
-1. Create main menu component with buttons for session, study, break, start, and setting.
-2. Create button component for sessions, study, and break
-    - Create object binding two triangle buttons beside the rectangular button
-    - Create text component centered within rectangular button
-    - Define props: array of strings for each button, and an option for "minutes" 
-3. Create button for start component 
-    - Create rectangular button with text "start"
-    - No props
-    - Button functionality: Performs calculations and navigates you to timer
-4. Create button for settings component 
-    -
-
-*/
-
 "use client";
 
 import Image from 'next/image';
