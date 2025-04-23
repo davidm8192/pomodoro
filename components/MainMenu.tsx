@@ -20,6 +20,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import MenuButton from './MainMenuButton';
 import StartButton from './StartButton';
+import IconButton from './IconButton';
 import { SESSION_BUTTON, STUDY_BUTTON, BREAK_BUTTON } from '@/utils/label-constants';
 import { SETTINGS_ICON_SIZE } from '@/utils/size-constants';
 
@@ -41,14 +42,13 @@ function MainMenu() {
                 />
             </div>
             <div className="relative rounded-xl overflow-hidden shadow-lg bg-[var(--color2)] z-10">
-                <button className="absolute top-2 right-2 p-2 hover:opacity-65 transition-opacity duration-200">
-                    <Image
-                        src="/images/settings_icon.png"
-                        alt="Settings Icon"
-                        width={SETTINGS_ICON_SIZE}
-                        height={SETTINGS_ICON_SIZE}
-                    />
-                </button>
+                <IconButton
+                    onClick={() => {}} // TODO: Add settings functionality
+                    src="/images/settings_icon.png"
+                    alt="Settings Icon"
+                    size={SETTINGS_ICON_SIZE}
+                    className="absolute top-2 right-2"
+                />
                 <div className="p-2">
                     <div className="mt-2 flex flex-col gap-1 w-full items-center">
                         <MenuButton
