@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Timer from "@/components/Timer";
 import Button from "@/components/Button";
+import BackButton from "@/components/BackButton";
 import { TIMER_LABELS } from '@/utils/label-constants';
 
 export default function TimerPage() {
@@ -63,8 +64,11 @@ export default function TimerPage() {
 
   return (
     <div className={`min-h-screen flex flex-col items-center justify-center transition-colors duration-500 ${
-      isStudyTime ? 'bg-[var(--color1)]' : 'bg-[var(--color3)]'
+      isStudyTime ? 'bg-[var(--color1)]' : 'bg-[var(--color2)]'
     }`}>
+      <div className="absolute top-4 left-4">
+        <BackButton />
+      </div>
       <div className="text-center mb-8">
         <h1 className="text-4xl font-press-start mb-2">
           {isStudyTime ? TIMER_LABELS.STUDY_TIME : TIMER_LABELS.BREAK_TIME}

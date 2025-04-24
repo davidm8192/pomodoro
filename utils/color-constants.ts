@@ -8,6 +8,17 @@ export const THEME_STANDARD = {
     LABEL_COLOR2: "#47573E"
 };
 
-export const themes = {
-    standard: THEME_STANDARD,
-}
+export const THEME_BLOSSOM = {
+    COLOR1: "#FFDCE2",
+    COLOR2: "#FAE8D0",
+    COLOR3: "#F4ACB7",
+    COLOR4: "#E4C7BA",
+    TITLE_COLOR: "#000000",
+    LABEL_COLOR1: "#584B33",
+    LABEL_COLOR2: "#734048"
+};
+
+export const THEMES = [
+    THEME_STANDARD,
+    THEME_BLOSSOM,
+];

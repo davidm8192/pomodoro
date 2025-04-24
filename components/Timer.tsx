@@ -53,8 +53,8 @@ export default function Timer({ initialTime, onComplete, isStudy, onSkip, timerI
   }, []);
 
   return (
-    <div className={`flex flex-col items-center justify-center ${isStudy ? 'text-[var(--title-color)]' : 'text-[var(--color2)]'}`}>
-      <div className="text-8xl font-press-start mb-4">
+    <div className="flex flex-col items-center justify-center">
+      <div className={`text-8xl font-press-start mb-4 ${isStudy ? 'text-[var(--title-color)]' : 'text-[var(--title-color)]'}`}> 
         {formatTime(timeLeft)}
       </div>
       <div className="flex gap-4">
@@ -62,7 +62,7 @@ export default function Timer({ initialTime, onComplete, isStudy, onSkip, timerI
           {isRunning ? TIMER_LABELS.PAUSE : TIMER_LABELS.RESUME}
         </Button>
         <Button onClick={onSkip}>
-          {isStudy ? TIMER_LABELS.SKIP_TO_BREAK : TIMER_LABELS.SKIP_TO_STUDY}
+          {TIMER_LABELS.SKIP}
         </Button>
       </div>
     </div>

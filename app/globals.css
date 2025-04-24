@@ -13,6 +13,7 @@
   --title-color: #000000;
   --label-color1: #5D4237;
   --label-color2: #47573E;
+  --color-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,7 +29,20 @@
 }
 
 body {
+  background-color: var(--color1);
   color: var(--title-color);
-  background: var(--color1);
   font-family: Arial, Helvetica, sans-serif;
+  transition: var(--color-transition);
+}
+
+.bg-\[var\(--color1\)\],
+.bg-\[var\(--color2\)\],
+.bg-\[var\(--color3\)\],
+.bg-\[var\(--color4\)\],
+.text-\[var\(--title-color\)\],
+.text-\[var\(--label-color1\)\],
+.text-\[var\(--label-color2\)\],
+.border-\[var\(--label-color1\)\],
+.ring-\[var\(--color4\)\] {
+  transition: var(--color-transition);
 }

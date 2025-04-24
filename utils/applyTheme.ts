@@ -3,6 +3,8 @@ import { THEME_STANDARD } from './color-constants';
 export function applyTheme(theme: typeof THEME_STANDARD) {
   if (typeof window !== "undefined") {
     const root = document.documentElement;
+    
+    root.style.setProperty('--color-transition', 'background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease');
     root.style.setProperty('--color1', theme.COLOR1);
     root.style.setProperty('--color2', theme.COLOR2);
     root.style.setProperty('--color3', theme.COLOR3);
